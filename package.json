@@ -1,0 +1,15 @@
+{
+  "name": "fylo-dark-theme-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

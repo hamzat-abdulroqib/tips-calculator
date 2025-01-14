@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Space+Mono"
+    />
+    <link rel="stylesheet" href="public/styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body class="bg-lightgrayishcyan">
+    <section>
+      <h1
+        class="text-center font-[700] font-mono pt-20 text-6xl space-x-5 text-verydarc"
+      >
+        SPLI <br />TTER
+      </h1>
+      <div
+        class="container bg-white rounded-xl w-96 h-[100%] mx-auto pb-7 md:flex md:w-[55%] md:justify-center md:mb-20"
+      >
+        <!-- left container -->
+        <div class="left-container p-5 md:w-1/2">
+          <label for="price" class="block font-[700] py-3 font-mono"
+            >Bill</label
+          >
+
+          <img
+            src="images/icon-dollar.svg"
+            alt="dollar"
+            class="absolute ml-3 mt-3"
+          />
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="0"
+            class="block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          />
+          <h2 class="font-[700] py-3 font-mono">Select Tip %</h2>
+          <div
+            class="ti-button grid grid-cols-2 gap-4 font-[700] md:grid-cols-3"
+          >
+            <!-- button part -->
+            <button
+              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+            >
+              5%
+            </button>
+            <button
+              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+            >
+              10%
+            </button>
+            <button
+              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+            >
+              15%
+            </button>
+            <button
+              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+            >
+              25%
+            </button>
+            <button
+              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+            >
+              50%
+            </button>
+            <input
+              type="number"
+              name="number"
+              id="num"
+              placeholder="Custom"
+              class="block w-full px-3 py-2 text-center bg-verylightgrayishcyan border border-verydarc rounded-md text-xl font-sans shadow-sm text-verydarc focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+            />
+          </div>
+          <label for="price" class="block font-[700] py-3 font-mono"
+            >People</label
+          >
+          <img
+            src="images/icon-person.svg"
+            alt="dollar"
+            class="absolute ml-3 mt-3"
+          />
+          <input
+            type="number"
+            id="price"
+            name="price"
+            placeholder="0"
+            class="block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          />
+        </div>
+        <!-- right container -->
+        <div
+          class="right-container bg-verydarc mx-4 rounded-md md:w-1/2 md:mt-4"
+        >
+          <div class="container px-5 py-5 space-y-5 font-mono">
+            <div class="flex justify-between">
+              <h2 class="font-[700] font-sans text-white text-xl">
+                Tip Amount <br />
+                <span class="text-strongcyan text-xl">/person</span>
+              </h2>
+              <h3 class="text-strongcyan font-[700] text-4xl pt-3">$0.00</h3>
+            </div>
+            <div class="flex justify-between">
+              <h2 class="font-[700] font-sans text-white text-xl">
+                Total <br />
+                <span class="text-strongcyan text-xl">/person</span>
+              </h2>
+              <h3 class="text-strongcyan font-[700] text-4xl pt-3">$0.00</h3>
+            </div>
+
+            <div class="mx-auto md:pt-[124px]">
+              <button
+                class="items-center bg-strongcyan w-full py-2 rounded-md text-verydarc text-xl font-[700] font-sans"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
