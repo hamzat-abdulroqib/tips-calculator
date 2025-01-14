@@ -45,7 +45,7 @@
             id="price"
             name="price"
             placeholder="0"
-            class="block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+            class="bill_tip block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
           />
           <h2 class="font-[700] py-3 font-mono">Select Tip %</h2>
           <div
@@ -53,27 +53,32 @@
           >
             <!-- button part -->
             <button
-              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+              data-tip="5"
+              class="tip_percent bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
             >
               5%
             </button>
             <button
-              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+              data-tip="10"
+              class="tip_percent bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
             >
               10%
             </button>
             <button
-              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+              data-tip="15"
+              class="tip_percent bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
             >
               15%
             </button>
             <button
-              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+              data-tip="25"
+              class="tip_percent bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
             >
               25%
             </button>
             <button
-              class="bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
+              data-tip="50"
+              class="tip_percent bg-verydarc text-white text-2xl font-mono p-2 rounded-md hover:bg-strongcyan hover:text-verydarc"
             >
               50%
             </button>
@@ -82,7 +87,7 @@
               name="number"
               id="num"
               placeholder="Custom"
-              class="block w-full px-3 py-2 text-center bg-verylightgrayishcyan border border-verydarc rounded-md text-xl font-sans shadow-sm text-verydarc focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+              class="tip_percent block w-full px-3 py-2 text-center bg-verylightgrayishcyan border border-verydarc rounded-md text-xl font-sans shadow-sm text-verydarc focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
             />
           </div>
           <label for="price" class="block font-[700] py-3 font-mono"
@@ -90,7 +95,7 @@
           >
           <img
             src="images/icon-person.svg"
-            alt="dollar"
+            alt="person"
             class="absolute ml-3 mt-3"
           />
           <input
@@ -98,7 +103,7 @@
             id="price"
             name="price"
             placeholder="0"
-            class="block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+            class="tip_person block w-full px-3 py-2 text-end text-xl font-bold text-verydarc bg-verylightgrayishcyan border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
           />
         </div>
         <!-- right container -->
@@ -111,19 +116,23 @@
                 Tip Amount <br />
                 <span class="text-strongcyan text-xl">/person</span>
               </h2>
-              <h3 class="text-strongcyan font-[700] text-4xl pt-3">$0.00</h3>
+              <h3 class="tip_amount text-strongcyan font-[700] text-4xl pt-3">
+                $0.00
+              </h3>
             </div>
             <div class="flex justify-between">
               <h2 class="font-[700] font-sans text-white text-xl">
                 Total <br />
                 <span class="text-strongcyan text-xl">/person</span>
               </h2>
-              <h3 class="text-strongcyan font-[700] text-4xl pt-3">$0.00</h3>
+              <h3 class="total_tip text-strongcyan font-[700] text-4xl pt-3">
+                $0.00
+              </h3>
             </div>
 
             <div class="mx-auto md:pt-[124px]">
               <button
-                class="items-center bg-strongcyan w-full py-2 rounded-md text-verydarc text-xl font-[700] font-sans"
+                class="reset items-center bg-strongcyan w-full py-2 rounded-md text-verydarc text-xl font-[700] font-sans"
               >
                 Reset
               </button>
@@ -132,5 +141,7 @@
         </div>
       </div>
     </section>
+
+    <script src="public/script.js"></script>
   </body>
 </html>
